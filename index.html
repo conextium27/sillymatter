@@ -1,0 +1,219 @@
+﻿<!DOCTYPE html>
+<html ng-app="myApp" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+  
+
+    <title>SillyMatter</title>
+    <link href="https://fonts.googleapis.com/css?family=Coming+Soon" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.17/angular.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular-route.js"></script>
+        <script src="js/script.js"></script>
+    
+    
+
+    <link href="styles/estiloshome.css" rel="stylesheet" />
+    <link href="js/slick/slick/slick.css" rel="stylesheet" />
+    <link href="js/slick/slick/slick-theme.css" rel="stylesheet" />
+   
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+ 
+        <div class="container">
+
+            <div class="navbar-header">
+               
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                   
+                </button>
+              
+                <a class="navbar-brand logo img-responsive" href="#"></a>
+            </div>
+            
+            <div id="navbar" class="collapse navbar-collapse">
+                
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#about">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+              
+                    <div class="form-group navbar-form navbar-right">
+                        <input ng-model="dexNum" placeholder="buscar" type="search"  class="form-control ">
+                        
+                    </div>
+                    
+           
+                </div>   
+                    
+                
+            </div>
+        </div>
+    </nav>
+
+
+  
+    <div class="jumbotron ima img-responsive">
+        
+       
+       
+       
+            <div class="container">
+                <div class="tit ">SillyMatter</div><br/>
+                <div class="col-lg-12 tit6">
+                Es una agencia creativa digital que busca crear el balance perfecto entre funcionalidad, diseño y estrategia.
+                </div>
+                <p><a class="btn btn-primary btn-lg" href="#" role="button">Más Información &raquo;</a></p>
+            </div>
+        
+    </div>
+
+    <div class="container">
+
+
+         <div ng-controller="pokeController">
+           <div class="form-vertical">
+              <div class="form-group">
+              <label class="col-md-4 col-xs-4  control-label" for=""></label>
+                 <div class="col-md-3">
+                    <input ng-model="dexNum" placeholder="Numero del pokemon" type="search"  class="form-control input-md" required="">
+                 </div>
+              </div>
+          <div class="form-group">
+          <label class="col-md-4 col-xs-4 control-label" for="singlebutton"></label>
+             <div class="col-md-4">
+               <button ng-click="getPokemon()" class="btn btn-primary">Buscar</button>
+             </div>
+          </div>
+         </div>
+         <br/>
+         <br/>
+         <div class="row">
+          <div class="col-md-2 col-xs-7 col-md-offset-4">
+            <div style="font-size: 14pt;">Pokemon: {{ pokemon.name }}</div>
+            <div style="font-size: 14pt;">Peso: {{ pokemon.weight }} </div>
+            <div style="font-size: 14pt;">Ataque: {{ pokemon.attack }}</div>
+            <div style="font-size: 14pt;">Defensa: {{ pokemon.defense }}</div>
+            <div style="font-size: 14pt;">Velocidad: {{ pokemon.speed }}</div> 
+          </div>
+          <div class="col-md-1 col-xs-5 ">            
+            <img ng-src="{{ pokemon.sprite }}" />
+          </div>  
+          </div>
+          </div>
+          <br/>
+          <br/>
+        
+        <div class="row">
+            <div class="col-md-4">
+                <h2>Heading</h2>
+                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+            </div>
+            <div class="col-md-4">
+                <h2>Heading</h2>
+                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+            </div>
+            <div class="col-md-4">
+                <h2>Heading</h2>
+                <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="main">
+                    <div class="ls">
+                        <div class="sl__slide">
+                            <img src="images/sl1.jpg" class="sl__img" />
+                            <div class="sl__text">
+                                <h3 class="sl__zag"> imagen 1</h3>
+                                
+                            </div>
+                        </div>
+
+                        <div class="sl__slide">
+                            <img src="images/sl2.jpg" class="sl__img" />
+                            <div class="sl__text">
+                                <h3 class="sl__zag"> imagen 2</h3>
+                               
+                            </div>
+                        </div>
+
+                        <div class="sl__slide">
+                            <img src="images/sl3.jpg" class="sl__img" />
+                            <div class="sl__text">
+                                <h3 class="sl__zag"> imagen 3</h3>
+                               
+                            </div>
+                        </div>
+
+                        <div class="sl__slide">
+                            <img src="images/sl4.jpg" class="sl__img" />
+                            <div class="sl__text">
+                                <h3 class="sl__zag"> imagen 4</h3>
+                             
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <script src="http://code.jquery.com/jquery-latest.js"></script>
+                <script src="js/slick/slick/slick.min.js"></script>
+
+                <script>
+                   $(".ls").slick({
+                   autoplay: true,
+                   autoplaySpeed: 1600,
+                   fade: true,
+                   dots:true,
+                   });
+
+                </script>
+            </div>
+        </div>
+
+
+        
+        
+        <hr>
+
+        <footer >
+           Developed by Conextium
+        </footer>
+    </div> 
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+    
+    <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+
+    <script src="js/js.js"></script>
+   
+</body>
+</html>

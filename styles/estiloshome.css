@@ -1,0 +1,158 @@
+body{
+  font: 1em/1.6em sans-serif;
+  color: #353535;
+  background-color:lightgray;
+}
+
+.tit {
+    font-family: 'Coming Soon', cursive;
+    color:#2E9ED6;
+     font-size: 22pt;
+    padding-top: 35px;
+    
+}
+.tit6 {
+    font-family: 'Coming Soon', cursive;
+    color:#2E9ED6;
+    font-size: 16pt;
+    line-height: 1.5;
+    margin: 15px;
+}
+
+
+.tit2 {
+    font-family: 'Coming Soon', cursive;
+    color:white;
+    font-size: 16pt;
+    line-height: 1.5;
+    margin: 15px;
+}
+.tit3 {
+    font-family: 'Coming Soon', cursive;
+    color:white;
+    font-size: 22pt;
+    padding-top: 40px;
+    
+}
+.tit4 {
+font-family: 'Coming Soon', cursive;
+    color:black;
+    font-size: 19pt;
+    line-height: 1.5;
+    text-align: center;
+    
+
+}
+.tit5{
+    font-family: 'Coming Soon', cursive;
+    color:black;
+    font-size: 20pt;
+    text-align: center;;
+}
+.footer{
+
+  
+    background-image: url('../images/footer.fw.png');
+    background-size: 100% 100%;
+    background-color: transparent;
+        
+    width: 100%;
+    height: 100%;
+    z-index: -9;
+
+}
+
+
+.logo {
+  
+    background-image: url('../images/logo.png');
+    background-size: 100% 100%;
+    background-color: transparent;
+    
+}
+.ima {
+    background-image: url('../images/slide1.jpg');
+    background-color: transparent;
+    background-size: 100% 100%;
+
+    
+}
+
+.ima2 {
+    background-image: url('../images/grid.jpg');
+    background-color: transparent;
+    background-size: 100% 100%;
+
+    
+}
+
+.face{
+       background-image: url('../images/facebook.jpg');
+    background-color: transparent;
+    background-size: 100% 100%;
+
+      width:80px;
+      height:80px; 
+
+     
+}
+
+.git{
+       background-image: url('../images/git.jpg');
+    background-color: transparent;
+    background-size: 100% 100%;
+
+      width:80px;
+      height:80px; 
+
+     
+}
+
+.titw{
+       background-image: url('../images/tit.png');
+    background-color: transparent;
+    background-size: 100% 100%;
+
+      width:80px;
+      height:80px; 
+
+     
+}
+.inkl{
+       background-image: url('../images/in.png');
+    background-color: transparent;
+    background-size: 100% 100%;
+
+      width:80px;
+      height:80px; 
+
+     
+}
+.main{
+    max-width: 70%;
+    margin:20px auto;
+}
+
+
+.sl__img{
+  max-width: 100%;
+  height: auto;
+}
+.sl__slide{
+    position:relative;
+}    
+.sl__text{
+    position:absolute;
+    bottom:0;
+    background: rgba(0, 0, 0, 0.7);
+    width:100%;
+    color:white;
+    text-align:center;
+    text-shadow:1px 1px 1px rgba(0, 0, 0, 0.7);
+    padding: 3px 0;
+}
+
+.sl__zag{
+    margin: 0;
+    padding: 0 10px;
+}
