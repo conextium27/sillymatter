@@ -4,4 +4,5 @@
 ## tecnologías a utilizar
 * Bootstrap
 * AngularJS
-Desarrollado por Ricardo Espinosa 
+
+###Desarrollado por Ricardo Espinosa 
