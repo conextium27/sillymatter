@@ -1,6 +1,6 @@
 # sillymatter
 
-*Design  challenge por SillyMatter*
+**
 ## tecnologías a utilizar
 * Bootstrap
 * AngularJS
